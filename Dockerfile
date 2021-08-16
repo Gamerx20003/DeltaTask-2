@@ -2,15 +2,8 @@ FROM manjaro
 
 RUN pacman -Syyu
 
-COPY alias.sh /
-COPY attendance.log /
-COPY attendance.sh /
-COPY future.txt /
-COPY genMOM.sh /
-COPY genUser.sh /
-COPY getMOM.sh /
-COPY permit.sh /
-COPY schedule.sh /
+COPY . /
+WORKDIR /
 
 RUN chmod +x /alias.sh
 RUN chmod +x /attendance.sh
