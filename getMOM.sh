@@ -28,7 +28,7 @@ do
     datelist+="$date1"
     date1="$date"
   fi  
-done < /home/jegan/Desktop/attendance.log
+done < attendance.log
 
 n=${#datelist[@]} 
 

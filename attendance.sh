@@ -21,7 +21,7 @@ do
     name=$(cut -d' ' -f 1 <<<$line) 
     date=$(cut -d' ' -f 3 <<<$line) 
     userdate[$date]="${userdate[$date]} $name"
-done < /home/jegan/Desktop/attendance.log
+done < attendance.log
 
 while [ "$date1" != "$date2" ]
 do

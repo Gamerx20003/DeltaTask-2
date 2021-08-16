@@ -18,7 +18,7 @@ do
       fi
     done
   fi
-done < /home/jegan/Desktop/attendance.log
+done < attendance.log
 
 touch $date1_mom.txt /home/"$MOMer"/Desktop
 echo "This is the MOM " > /home/"$MOMer"/Desktop/$date1_mom.txt 

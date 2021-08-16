@@ -1,5 +1,4 @@
-FROM manjaro
-
+FROM manjarolinux/base:latest as base
 RUN pacman -Syyu
 
 COPY . /
@@ -16,11 +15,11 @@ RUN chmod +r /attendance.log
 RUN chmod +r /future.txt
 
 RUN /alias.sh
-RUN /attendance.sh
-RUN /genMOM.sh
-RUN /getMOM.sh
+RUN /genUser.sh
 RUN /permit.sh
 RUN /schedule.sh
-RUN /genUser.sh
+RUN /attendance.sh
+# RUN /genMOM.sh
+# RUN /getMOM.sh
 
-CMD["server created"]
+

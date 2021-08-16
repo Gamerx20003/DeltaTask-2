@@ -28,5 +28,5 @@ do
       ((i++))
       done
    fi  
-done < /home/jegan/Desktop/future.txt
+done < future.txt
 
